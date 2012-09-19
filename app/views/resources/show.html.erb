@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Resource type:</b>
+  <%= @resource.resource_type %>
+</p>
+
+<p>
+  <b>Make:</b>
+  <%= @resource.make %>
+</p>
+
+<p>
+  <b>Model:</b>
+  <%= @resource.model %>
+</p>
+
+<p>
+  <b>Purchesed at:</b>
+  <%= @resource.purchesed_at %>
+</p>
+
+<p>
+  <b>Serial number:</b>
+  <%= @resource.serial_number %>
+</p>
+
+<p>
+  <b>User name:</b>
+  <%= @resource.user_name %>
+</p>
+
+<p>
+  <b>Salvage value:</b>
+  <%= @resource.salvage_value %>
+</p>
+
+<p>
+  <b>Location:</b>
+  <%= @resource.location_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_resource_path(@resource) %> |
+<%= link_to 'Back', resources_path %>

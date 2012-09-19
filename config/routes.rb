@@ -1,4 +1,8 @@
 Hello::Application.routes.draw do
+  resources :locations
+
+  resources :resources
+
   get "hello/index"
 
   # The priority is based upon order of creation:

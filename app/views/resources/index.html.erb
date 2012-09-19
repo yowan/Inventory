@@ -1,0 +1,37 @@
+<h1>Listing resources</h1>
+
+<table>
+  <tr>
+    <th>Resource type</th>
+    <th>Make</th>
+    <th>Model</th>
+    <th>Purchesed at</th>
+    <th>Serial number</th>
+    <th>User name</th>
+    <th>Salvage value</th>
+    <th>Location</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @resources.each do |resource| %>
+  <tr>
+    <td><%= resource.resource_type %></td>
+    <td><%= resource.make %></td>
+    <td><%= resource.model %></td>
+    <td><%= resource.purchesed_at %></td>
+    <td><%= resource.serial_number %></td>
+    <td><%= resource.user_name %></td>
+    <td><%= resource.salvage_value %></td>
+    <td><%= resource.location_id %></td>
+    <td><%= link_to 'Show', resource %></td>
+    <td><%= link_to 'Edit', edit_resource_path(resource) %></td>
+    <td><%= link_to 'Destroy', resource, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Resource', new_resource_path %>
